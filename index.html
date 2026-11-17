@@ -7,13 +7,27 @@
 <title>Luv Kush Nursing Home | Digital Visiting Card</title>
 <style>
 :root{--bg:#081722;--panel:#102b3d;--line:#24465b;--text:#f1f7fb;--muted:#a9c0ce;--accent:#16b99b;--blue:#75c8f2}
-*{box-sizing:border-box}body{margin:0;padding:22px 14px 34px;background:radial-gradient(ellipse at top,#173e55 0,#081722 58%);font-family:system-ui,-apple-system,"Noto Sans Devanagari",sans-serif;color:var(--text)}
-.wrap{max-width:520px;margin:auto}.card{background:linear-gradient(160deg,#102b3d,#0c2131);border:1px solid #2b5268;border-radius:26px;padding:22px;box-shadow:0 20px 60px #0006}
-.brand{text-align:center;padding:8px 5px 20px}.logo{margin:auto auto 12px;width:76px;height:76px;border-radius:22px;background:#eaf7f8;color:#12415a;display:grid;place-items:center;font-weight:900;font-size:23px;line-height:1.05;box-shadow:0 5px 18px #0004}.brand h1{font-size:25px;line-height:1.25;margin:0 0 5px}.brand p{margin:0;color:var(--muted);font-size:13px}
-.links{display:grid;gap:11px}.link{display:flex;align-items:center;gap:13px;padding:15px;border-radius:17px;background:#142f42;border:1px solid #294b60;min-height:76px;transition:.15s}.link:hover{border-color:var(--blue);transform:translateY(-1px)}.link.call{background:linear-gradient(100deg,#10b99a,#18a993);color:#052e2b;border:0}.ico{width:47px;height:47px;display:grid;place-items:center;border-radius:13px;background:#203d51;font-size:23px;flex:none}.call .ico{background:#07977e}.label{font-size:17px;font-weight:750}.sub{font-size:12px;color:var(--muted);margin-top:2px}.call .sub{color:#064b43}.arrow{margin-left:auto;color:#86b6cb;font-size:23px}.call .arrow{color:#075d51}
-.section{margin-top:20px}.section h2{font-size:13px;letter-spacing:.12em;text-align:center;color:#8fc7e2;margin:0 0 12px}.details{border-top:1px solid #29495b;margin-top:18px;padding-top:15px;color:var(--muted);font-size:12px;text-align:center;line-height:1.7}
-.edit{margin-top:18px;background:#fff;color:#153447;border-radius:18px;padding:17px}.edit h2{font-size:17px;margin:0 0 5px}.edit p{font-size:12px;color:#526a78;margin:0 0 12px}.field{display:grid;gap:5px;margin:10px 0}.field label{font-size:12px;font-weight:700}.field input{width:100%;padding:11px 12px;border:1px solid #cbd9df;border-radius:10px;font:inherit;font-size:14px;color:#153447}.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.btn{border:0;border-radius:10px;padding:11px 13px;font-weight:750;background:#0b9e86;color:white;cursor:pointer}.btn.alt{background:#e7f0f4;color:#173c50}.hint{font-size:11px;color:#5e7480;margin-top:9px;line-height:1.5}
-@media print{body{background:white;padding:0}.wrap{max-width:100%}.card{box-shadow:none;break-inside:avoid}.edit{display:none}}
+*{box-sizing:border-box}
+body{margin:0;padding:22px 14px 34px;background:radial-gradient(ellipse at top,#173e55 0,#081722 58%);font-family:system-ui,-apple-system,"Noto Sans Devanagari",sans-serif;color:var(--text)}
+.wrap{max-width:520px;margin:auto}
+.card{background:linear-gradient(160deg,#102b3d,#0c2131);border:1px solid #2b5268;border-radius:26px;padding:22px;box-shadow:0 20px 60px #0006}
+.brand{text-align:center;padding:8px 5px 20px}
+.logo{margin:auto auto 12px;width:76px;height:76px;border-radius:22px;background:#eaf7f8;color:#12415a;display:grid;place-items:center;font-weight:900;font-size:23px;line-height:1.05;box-shadow:0 5px 18px #0004}
+.brand h1{font-size:25px;line-height:1.25;margin:0 0 5px}
+.brand p{margin:0;color:var(--muted);font-size:13px}
+.links{display:grid;gap:11px}
+.link{display:flex;align-items:center;gap:13px;padding:15px;border-radius:17px;background:#142f42;border:1px solid #294b60;min-height:76px;text-decoration:none;color:inherit;transition:.15s}
+.link:hover{border-color:var(--blue);transform:translateY(-1px)}
+.link.call{background:linear-gradient(100deg,#10b99a,#18a993);color:#052e2b;border:0}
+.ico{width:47px;height:47px;display:grid;place-items:center;border-radius:13px;background:#203d51;font-size:23px;flex:none}
+.call .ico{background:#07977e}
+.label{font-size:17px;font-weight:750}
+.sub{font-size:12px;color:var(--muted);margin-top:2px}
+.call .sub{color:#064b43}
+.arrow{margin-left:auto;color:#86b6cb;font-size:23px}
+.call .arrow{color:#075d51}
+.details{border-top:1px solid #29495b;margin-top:18px;padding-top:15px;color:var(--muted);font-size:12px;text-align:center;line-height:1.7}
+@media print{body{background:white;padding:0}.wrap{max-width:100%}.card{box-shadow:none;break-inside:avoid}}
 </style>
 </head>
 <body>
@@ -26,45 +40,19 @@
    <p>मल्टी स्पेशियलिटी हॉस्पिटल · कोटा, राजस्थान</p>
   </header>
   <div class="links" id="links">
-   <a class="link call" data-key="call" href="tel:9982266330"><span class="ico">☎</span><span><div class="label">Call Now</div><div class="sub">Appointments · +91 99822 66330</div></span><span class="arrow">↗</span></a>
-   <a class="link" data-key="website" href="https://www.lknhkota.com" target="_blank" rel="noopener"><span class="ico">🌐</span><span><div class="label">Official Website</div><div class="sub">Services, doctors & full details</div></span><span class="arrow">↗</span></a>
-   <a class="link" data-key="maps" href="https://maps.app.goo.gl/DpNHSn1jbfhHvXAe7" target="_blank" rel="noopener"><span class="ico">📍</span><span><div class="label">Google Maps</div><div class="sub">Location & directions</div></span><span class="arrow">↗</span></a>
-   <a class="link" data-key="booking" href="https://www.lknhkota.com/book-appointment" target="_blank" rel="noopener"><span class="ico">📅</span><span><div class="label">Online Appointment</div><div class="sub">Book a consultation</div></span><span class="arrow">↗</span></a>
-   <a class="link" data-key="instagram" href="#" target="_blank" rel="noopener"><span class="ico">◎</span><span><div class="label">Instagram</div><div class="sub">Add Instagram profile link</div></span><span class="arrow">↗</span></a>
-   <a class="link" data-key="facebook" href="#" target="_blank" rel="noopener"><span class="ico">f</span><span><div class="label">Facebook</div><div class="sub">Add Facebook page link</div></span><span class="arrow">↗</span></a>
-   <a class="link" data-key="youtube" href="#" target="_blank" rel="noopener"><span class="ico">▶</span><span><div class="label">YouTube</div><div class="sub">Add YouTube channel link</div></span><span class="arrow">↗</span></a>
+   <a class="link call" href="tel:+919982266330"><span class="ico">☎</span><span><div class="label">Call Now</div><div class="sub">Appointments · +91 99822 66330</div></span><span class="arrow">↗</span></a>
+   <a class="link" href="https://www.lknhkota.com" target="_blank" rel="noopener"><span class="ico">🌐</span><span><div class="label">Official Website</div><div class="sub">Services, doctors & full details</div></span><span class="arrow">↗</span></a>
+   <a class="link" href="https://maps.app.goo.gl/DpNHSn1jbfhHvXAe7" target="_blank" rel="noopener"><span class="ico">📍</span><span><div class="label">Google Maps</div><div class="sub">Location & directions</div></span><span class="arrow">↗</span></a>
+   <a class="link" href="https://www.lknhkota.com/book-appointment" target="_blank" rel="noopener"><span class="ico">📅</span><span><div class="label">Online Appointment</div><div class="sub">Book a consultation</div></span><span class="arrow">↗</span></a>
+
+   <!-- भविष्य में सोशल मीडिया लिंक जोड़ने के लिए नीचे की लाइनों से <!-- और --> हटाएँ और अपना लिंक डालें:
+   <a class="link" href="https://instagram.com/your-page" target="_blank" rel="noopener"><span class="ico">◎</span><span><div class="label">Instagram</div><div class="sub">Follow us on Instagram</div></span><span class="arrow">↗</span></a>
+   <a class="link" href="https://facebook.com/your-page" target="_blank" rel="noopener"><span class="ico">f</span><span><div class="label">Facebook</div><div class="sub">Follow us on Facebook</div></span><span class="arrow">↗</span></a>
+   <a class="link" href="https://youtube.com/@your-channel" target="_blank" rel="noopener"><span class="ico">▶</span><span><div class="label">YouTube</div><div class="sub">Watch health videos</div></span><span class="arrow">↗</span></a>
+   -->
   </div>
   <div class="details">1, केशव नगर, केशवराय पाटन रोड, सेंट जोन्स स्कूल के पास,<br>कोटा – 324008, राजस्थान</div>
  </main>
-
- <section class="edit">
-  <h2>कार्ड के लिंक बदलें / जोड़ें</h2>
-  <p>नीचे लिंक पेस्ट करके “लिंक सेव करें” दबाएँ। यह बदलाव इसी ब्राउज़र में सेव होंगे।</p>
-  <div class="field"><label for="phone">Call / WhatsApp नंबर (देश कोड सहित)</label><input id="phone" value="+919982266330" placeholder="+919XXXXXXXXX"></div>
-  <div class="field"><label for="website">Official Website URL</label><input id="website" value="https://www.lknhkota.com"></div>
-  <div class="field"><label for="maps">Google Maps URL</label><input id="maps" value="https://maps.app.goo.gl/DpNHSn1jbfhHvXAe7"></div>
-  <div class="field"><label for="booking">Online Appointment URL</label><input id="booking" value="https://www.lknhkota.com/book-appointment"></div>
-  <div class="field"><label for="instagram">Instagram URL</label><input id="instagram" placeholder="https://instagram.com/your-page"></div>
-  <div class="field"><label for="facebook">Facebook URL</label><input id="facebook" placeholder="https://facebook.com/your-page"></div>
-  <div class="field"><label for="youtube">YouTube URL</label><input id="youtube" placeholder="https://youtube.com/@your-channel"></div>
-  <div class="btns"><button class="btn" id="save">लिंक सेव करें</button><button class="btn alt" id="reset">रीसेट</button><button class="btn alt" onclick="window.print()">कार्ड प्रिंट करें</button></div>
-  <div class="hint">ध्यान दें: QR Code बनाने से पहले कार्ड को स्थायी सार्वजनिक URL पर प्रकाशित करना होगा। QR उसी कार्ड के URL पर खुलेगा। यह फाइल अभी लिंक-सेटअप वाला कार्ड है; आपके सोशल मीडिया लिंक मिलने पर उन्हें जोड़ देंगे।</div>
- </section>
 </div>
-<script>
-const fields=['phone','website','maps','booking','instagram','facebook','youtube'];
-const defaults={phone:'+919982266330',website:'https://www.lknhkota.com',maps:'https://maps.app.goo.gl/DpNHSn1jbfhHvXAe7',booking:'https://www.lknhkota.com/book-appointment',instagram:'',facebook:'',youtube:''};
-function validUrl(v){try{const u=new URL(v);return ['http:','https:'].includes(u.protocol)}catch{return false}}
-function apply(){
- const phone=document.getElementById('phone').value.trim().replace(/[^\d+]/g,'');
- const vals={website:document.getElementById('website').value.trim(),maps:document.getElementById('maps').value.trim(),instagram:document.getElementById('instagram').value.trim(),facebook:document.getElementById('facebook').value.trim(),youtube:document.getElementById('youtube').value.trim()};
- const call=document.querySelector('[data-key="call"]');call.href='tel:'+phone.replace(/^\+/,'');call.querySelector('.sub').textContent='Appointments · '+phone;
- vals.booking=document.getElementById('booking').value.trim();\n for(const [k,v] of Object.entries(vals)){const a=document.querySelector('[data-key="'+k+'"]');if(v && validUrl(v)){a.href=v;a.style.opacity='1';a.querySelector('.sub').textContent=k==='website'?'Services, doctors & full details':k==='maps'?'Location & directions':'Open '+k.charAt(0).toUpperCase()+k.slice(1)}else{a.href='#';a.style.opacity='.55';a.querySelector('.sub').textContent='Link not added yet'}}
-}
-document.getElementById('save').addEventListener('click',()=>{for(const f of fields)localStorage.setItem('lknh_'+f,document.getElementById(f).value);apply();alert('लिंक इस ब्राउज़र में सेव हो गए।')});
-document.getElementById('reset').addEventListener('click',()=>{for(const f of fields){document.getElementById(f).value=defaults[f];localStorage.removeItem('lknh_'+f)}apply()});
-for(const f of fields){const v=localStorage.getItem('lknh_'+f);if(v!==null)document.getElementById(f).value=v}
-apply();
-</script>
 </body>
 </html>
